@@ -12,9 +12,9 @@
 			{
 					return "Player 2";
 			}
-			else 
+			else
 			{
-					return "Draw";
+					return "Nobody :(";
 			}
 
 		}

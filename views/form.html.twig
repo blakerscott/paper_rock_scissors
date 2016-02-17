@@ -10,22 +10,31 @@
         <p>You know how to play. Pick rock, paper, or scissors and try to beat your opponent!</p>
         <form action='/view_results'>
               <label for='player1'>Player 1's move:</label>
-              <select class="form-control" id="player1">
+              <select class="form-control" name="playerone">
                       <option value="rock">Rock</option>
                       <option value="paper">Paper</option>
                       <option value="scissors">Scissors</option>
               </select>
               <label for='player2'>Player 2's move:</label>
-              <select class="form-control" id="player2">
+              <select class="form-control" name="playertwo">
                       <option value="rock">Rock</option>
                       <option value="paper">Paper</option>
                       <option value="scissors">Scissors</option>
               </select>
+              <button type='submit' class='btn-success'>Who wins?</button>
             </form>
+            <!-- <form action='/view_results'>
+                        <div class='form-group'>
+                          <label for='playerone'>Player 1's move:</label>
+                          <input id='playerone' name='playerone' class='form-control' type='text'>
+                        </div>
+                        <div class='form-group'>
+                          <label for='playertwo'>Player 2's move:</label>
+                          <input id='playertwo' name='playertwo' class='form-control' type='text'>
+                        </div>
+                        <button type='submit' class='btn-success'>Who wins?</button>
+                    </form> -->
     </div>
 
   </body>
 </html>
-
-
-  
