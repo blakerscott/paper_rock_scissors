@@ -18,5 +18,11 @@
         return $app['twig']->render('rps_results.html.twig', array('result' => $check_results));
     });
 
+		$app->get('/view_computer_results', function() use($app) {
+				$my_RockPaperScissors = new RockPaperScissors;
+				$check_results = $my_RockPaperScissors->playComputer($_GET['playerhuman']);
+				return $app['twig']->render('computer_results.html.twig', array('computer_result' => $check_results));
+		});
+
     return $app;
 ?>
